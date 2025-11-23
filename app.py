@@ -7,3 +7,9 @@ price = 3.50
 Total_sales = price * quantity
 
 print(f"Your total sales for cupcake sales is ${Total_sales:.2f} today. 𓆝 𓆟 𓆞 ")
+
+try:
+    quantity = float(quantity)
+except ValueError:
+    print("Please enter a valid number for the quantity of cupcakes sold.")
+    exit()
